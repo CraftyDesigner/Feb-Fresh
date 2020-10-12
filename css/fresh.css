@@ -22,7 +22,7 @@ header nav a:link, header nav a:visited{
 	background: #808080;
 	color: #000000;
 	text-decoration: none;
-	font-size: 150%;
+	font-size: 200%;
 	margin-bottom: 8px;
 }
 
@@ -38,10 +38,10 @@ body{
 }
 
 table{
-	width:100%;
+	width:98%;
 	text-align: center;
 	border-collapse: collapse;
-	font-size: 150%;
+	font-size: 200%;
 }
 
 table th:first-child, table td:first-child{
