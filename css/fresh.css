@@ -42,21 +42,22 @@ table{
 	width:100%;
 	text-align: center;
 	border-collapse: collapse;
-	font-size: 275%;
-}
-
-table th:first-child, table td:first-child{
-	text-align: left;
-	width: 70%;
-}
-
-th, td{
-	border-bottom: 1px solid #ddd;
+	font-size: 5vw;
 }
 
 th{
 	background-color: #4CAF50;
 	color: white;
+}
+
+th, td{
+	border-bottom: 1px solid #ddd;
+	width: 15%;
+}
+
+table th:first-child, table td:first-child{
+	text-align: left;
+	width: 70%;
 }
 
 tr:nth-child(even) {
