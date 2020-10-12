@@ -3,7 +3,6 @@
 }
 
 header{
-	position: sticky;
 	width: 100%;
 	background-color: white;
 	font-family: "Times New Roman", Times, serif;
@@ -17,17 +16,23 @@ body{
 }
 
 footer{
-	position: fixed;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	background-color: #4CAF50;
 	font-family: "Times New Roman", Times, serif;
+	margin-top: 8px;
 }
 
-a:link, a:visited{
-	color: black;
+header nav a:link, header nav a:visited{
+	display: inline-block;
+	padding: 1% 6%;
+	margin:10px 0% 10px 4%;
+	border-radius: 15px;
+	background: #808080;
+	color: #000000;
 	text-decoration: none;
+	font-size: 150%;
 }
 
 table{
@@ -35,10 +40,12 @@ table{
 	margin: 8px;
 	text-align: center;
 	border-collapse: collapse;
+	font-size: 150%;
 }
 
 table th:first-child, table td:first-child{
 	text-align: left;
+	width: 80%;
 }
 
 th, td{
@@ -56,25 +63,17 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 	width: 50%;
 }
 
-.fa {
+.fa:link, .fa:visited {
   padding: 20px;
   font-size: 30px;
   width: 30px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
+  color: #000000;
 }
 
-.icon{
-	margin: 3%;
-  	font-size: 30px;
-  	width: 10%;
-  	text-align: center;
-  	text-decoration: none;
-  	border-radius: 50%;
-  	border: 5px solid;
-}
 
-.fa:hover, .icon:hover, .icon:active{
+.fa:hover, .active{
   opacity: 0.7;
 }
