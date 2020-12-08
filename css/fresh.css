@@ -9,6 +9,10 @@ header a img{
 	margin: auto;
 }
 
+.fa-bars{
+	display: none;
+}
+
 .navbar{
 	overflow: auto;
 	background-color: #029c46;
@@ -264,19 +268,25 @@ tr:nth-child(even) {
 
 @media screen and (max-width: 991px){
 
-	.fa-bars{
-		display: none;
-	}
-
 	header a img{
 	}
 }
 
 @media screen and (max-width: 690px){
 
+	.dropdown{
+		display: none;
+	}
+
 	.fa-bars{
 		display: inline-block;
 		font-size: 25px
+	}
+
+	.vbar{
+		float: left;
+		overflow: hidden;
+		display: inline-block;
 	}
 
 	header a img{
@@ -287,21 +297,13 @@ tr:nth-child(even) {
 		padding: 5px;
 	}
 
-	.dropdown a{
-		display: none;
-	}
-
-	.dropbtn{
-		display: none;
-	}
-
 	.footnav{
 		position: relative;
 	}
 
 	.blank{
-	height: 0px;
-}
+		height: 0px;
+	}
 }
 
 @media screen and (min-width: 100px){
