@@ -14,24 +14,98 @@
 			<img class= "ititle" src= "img/fresh_title.jpg" alt= "Feb Fresh Tea">
 		</a>
 
-		<nav>
-			<a href= "bebidas.html">Bebidas</a>
-			<a href= "snacks.html">Snacks</a>
-			<a href= "postres.html">Desserts</a>
-			<a href= "combos.html">Combos</a>
-			<!--<a href= "promos.html">Promos</a> -->
-		</nav>
+		<div class= "navbar" style= "text-align: center;">
+			<div class= "dropdown">
+				<button class= "dropbtn" onclick= "drop('menu')">Feb Fresh Menu
+					<i class= "fa fa-caret-down"></i>
+				</button>
+				<div class= "dropdown-content" id= "menu">
+					<a href= "bebidas.html">Drinks</a>
+					<a href= "snacks.html">Snacks</a>
+					<a href= "postres.html">Desserts</a>
+				</div>
+			</div>
+
+			<div class= "dropdown">
+				<a href= "mktea_nut.html">Nutrition</a>
+			</div>
+
+			<div class= "dropdown">
+				<a href= "https://api.whatsapp.com/send?phone=50762546319" target="_blank">Make Order</a>
+			</div>
+
+			<div class= "dropdown">
+				<a href= "location.html">Location</a>
+			</div>
+
+			<div class= "dropdown">
+				<a href= "rate.html">Rate your Drink!!!</a>
+			</div>
+
+			<div>
+				<a href= "https://api.whatsapp.com/send?phone=50762546319" target="_blank" class= "fa fa-bars"></a> 
+			</div>
+
+		</div>
 	</header>
 
 	<body>
-		<h2>Recomendados</h2>
-		<h2>Populares</h2>
+		<div class= "slideshow-container">
+			<div class= "mySlides fade">
+				<div class= "number"> 1/3 </div>
+				<img src= "img/dessert.png" style= "width: 100%">
+				<div class= "text"></div>
+			</div>
+
+			<div class= "mySlides fade">
+				<div class= "number"> 2/3 </div>
+				<img src= "img/tiramisu.jpg" style= "width: 100%">
+				<div class= "text"></div>
+			</div>
+
+			<div class= "mySlides fade">
+				<div class= "number"> 3/3 </div>
+				<img src= "img/promo_demo_1.jpg" style= "width: 100%">
+				<div class= "text"></div>
+			</div>
+
+			<a class= "prev" onclick= "plusSlides(-1)"> &#10094; </a>
+			<a class= "next" onclick= "plusSlides(1)">  &#10095; </a>
+		</div>
+
+		<div class= "dot-box" style= "text-align: center">
+			<span class= "dot" onclick= "currentSlide(1)"></span>
+			<span class= "dot" onclick= "currentSlide(2)"></span>
+			<span class= "dot" onclick= "currentSlide(3)"></span>
+		</div>
+
+		<div class= "blank"></div>
+
+		<script>
+			showSlides(1);
+
+			window.onclick = function(e){
+				if (!e.target.matches('.dropbtn')){
+					var menu = document.getElementById("menu");
+					if(menu.classList.contains('show')){
+						menu.classList.remove('show');
+					}
+					
+					var nutrition = document.getElementById("nutrition");
+					if(nutrition.classList.contains('show')){
+						nutrition.classList.remove('show');
+					}
+				}
+			}
+		</script>
 	</body>
 
-	<footer>
+	<footer class= "footnav">
+		<p>Contactanos: (+507) 6254-6319</p>
 		<nav>
-			<a href= "https://api.whatsapp.com/send?phone=50762546319" class= "fa fa-whatsapp"></a>
-			<a href= "https://www.instagram.com/febfreshtea/?hl=es-la" class= "fa fa-instagram"></a><a href= "https://www.facebook.com/FEB-FRESH-TEA-102829091218994" class= "fa fa-facebook"></a>
+			<a href= "https://api.whatsapp.com/send?phone=50762546319" target="_blank" class= "fa fa-whatsapp"></a>
+			<a href= "https://www.instagram.com/febfreshtea/?hl=es-la" target="_blank" class= "fa fa-instagram"></a>
+			<a href= "https://www.facebook.com/FEB-FRESH-TEA-102829091218994" target="_blank" class= "fa fa-facebook"></a>
 		</nav>
 	</footer>
 </html>

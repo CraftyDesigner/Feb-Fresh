@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset= "UTF-8">
+		<title>Feb Fresh Tea Online</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel= "icon" href= "img/fresh_logo.png" type= "image/x-icon">
+		<script src= "https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" defer></script>
+		<link rel= "stylesheet" href= "css/fresh.css">
+		<script src= "js/fresh.js"></script>
+	</head>
+
+	<header>
+		<a href= "intro.html">
+			<img class= "ititle" src= "img/fresh_title.jpg" alt= "Feb Fresh Tea">
+		</a>
+
+		<div class= "navbar" style= "text-align: center;">
+			<div class= "dropdown">
+				<button class= "dropbtn" onclick= "drop('menu')">Feb Fresh Menu
+					<i class= "fa fa-caret-down"></i>
+				</button>
+				<div class= "dropdown-content" id= "menu">
+					<a href= "bebidas.html">Drinks</a>
+					<a href= "snacks.html">Snacks</a>
+					<a href= "postres.html">Desserts</a>
+				</div>
+			</div>
+
+			<div class= "dropdown">
+				<a href= "mktea_nut.html">Nutrition</a>
+			</div>
+
+			<div class= "dropdown">
+				<a href= "https://api.whatsapp.com/send?phone=50762546319">Make Order</a>
+			</div>
+
+			<div class= "dropdown">
+				<a href= "location.html">Location</a>
+			</div>
+			
+			<div class= "dropdown">
+				<a href= "rate.html">Rate your Drink!!!</a>
+			</div>
+		</div>
+	</header>
+
+	<body>
+		<div class="mapouter">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.6270846051357!2d-79.53895508464545!3d9.006419193536523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca9a5c225673d%3A0x6d5547c6b1f203af!2zRmViIGZyZXNoIHRlYSDkuozmnIjpspw!5e0!3m2!1ses!2spa!4v1603839156285!5m2!1ses!2spa" width="100%" height="640" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+			</iframe>
+		</div>
+
+		<script>
+			window.onclick = function(e){
+				if (!e.target.matches('.dropbtn')){
+					var menu = document.getElementById("menu");
+					if(menu.classList.contains('show')){
+						menu.classList.remove('show');
+					}
+					
+					var nutrition = document.getElementById("nutrition");
+					if(nutrition.classList.contains('show')){
+						nutrition.classList.remove('show');
+					}
+				}
+			}
+		</script>
+	</body>
+
+	<footer class= "footnav">
+		<p>Contactanos: (+507) 6254-6319</p>
+		<nav>
+			<a href= "https://api.whatsapp.com/send?phone=50762546319" class= "fa fa-whatsapp"></a>
+			<a href= "https://www.instagram.com/febfreshtea/?hl=es-la" class= "fa fa-instagram"></a><a href= "https://www.facebook.com/FEB-FRESH-TEA-102829091218994" class= "fa fa-facebook"></a>
+		</nav>
+	</footer>
+</html>
